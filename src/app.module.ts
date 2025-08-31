@@ -23,7 +23,7 @@ const config: ConfigService = new ConfigService();
       envFilePath: [envFilePath, envPath],
       isGlobal: true,
     }),
-    MongooseModule.forRoot(`mongodb://localhost:27018/saas_db`),
+    MongooseModule.forRoot(process.env.DATABASE_URL || 'mongodb://localhost:27017/saas_db'),
     HttpModule,
     JwtModule.register({ secret: 'yOUjr4bRjjDrakKrCpO74IWX5DT348Jf' }),
     AutomapperModule.forRoot({ strategyInitializer: classes() }),

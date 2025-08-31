@@ -13,6 +13,7 @@ import { UserDataModule } from './user/user.data.module';
 import { WorkspaceConfigurationDataModule } from './saasWorkspaceConfiguration/saasWorkspaceConfiguration.data.module';
 import { SaasCustomerAdminModule } from './saasCustomerAdmin/saasCustomerAdmin.data.module';
 import { SaasApplicationConfigurationDataModule } from './saasApplicationConfiguration/saasApplicationConfiguration.data.module';
+import { WidgetDataModule } from './widget/widget.data.module';
 
 let dataModules = [
   SaasworkspaceModule,
@@ -32,6 +33,7 @@ let dataModules = [
   SaasSubscriberDataModule,
   SaasPaymentDataModule,
   SaasSubscriptionHistoryDataModule,
-  SaasCustomerAdminModule
+  SaasCustomerAdminModule,
+  WidgetDataModule,
 ];
 export { dataModules };

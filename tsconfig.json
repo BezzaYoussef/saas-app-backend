@@ -24,5 +24,7 @@
       "@Gateway/*": ["src/gateway/*"],
       "@app/*": ["src/*"]
     }
-  }
+  },
+  "exclude": ["frontend/**/*", "saas-frontend/**/*", "node_modules", "dist", "test"],
+  "include": ["src/**/*"]
 }
